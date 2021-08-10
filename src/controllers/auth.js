@@ -20,7 +20,7 @@ module.exports = {
     let{email, senha} = req.body;
 
     try {
-      const resp = await api.post(`/identity/connect/authorize?response_type=code&client_id=${teste.AppID}&scope=OR.Jobs&redirect_uri=http://localhost:3340/auth`)
+      const resp = await api.post(`/identity/connect/authorize?response_type=code&client_id=${teste.AppID}&scope=OR.Jobs&redirect_uri=https://orchalexa.herokuapp.com/`)
       console.log(resp)
       return res.send(resp.data);
     } catch (e) {
