@@ -1,10 +1,15 @@
 const util = require('util');
 const Orchestrator = require('uipath-orchestrator');
+const { index } = require('./auth');
 
 
 module.exports = {
-
   async index(req,res){
+    console.log(req)
+    
+    return res.json(req)
+  },
+  async create(req,res){
     let {tenant, email, senha} = req.body
 
     try {
