@@ -5,9 +5,7 @@ const { index } = require('./auth');
 
 module.exports = {
   async index(req,res){
-    console.log(req)
-    
-    return res.json(req)
+    return res.json({url1: req.originalUrl, url2:req.params, url3: req.query})
   },
   async create(req,res){
     let {tenant, email, senha} = req.body
