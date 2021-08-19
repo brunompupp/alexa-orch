@@ -1,0 +1,59 @@
+{
+    "@odata.context": "https://servert2c.eastus.cloudapp.azure.com/odata/$metadata#Machines/UiPath.Server.Configuration.OData.ExtendedMachineDto",
+    "@odata.count": 3,
+    "value": [{
+        "@odata.type": "#UiPath.Server.Configuration.OData.ExtendedMachineDto",
+        "LicenseKey": "2702260f-8d3f-4104-92e5-4a55b8c15737",
+        "Name": "MZRS-TSSP02",
+        "Description": "Mazars TSSP02",
+        "Type": "Standard",
+        "Scope": "Default",
+        "NonProductionSlots": 0,
+        "UnattendedSlots": 1,
+        "HeadlessSlots": 0,
+        "TestAutomationSlots": 0,
+        "Key": "4ce26a11-c331-46bc-a4a3-fa04b2f560fe",
+        "Id": 40,
+        "RobotVersions": [{
+            "Count": 1,
+            "Version": "20.4.1.0"
+        }, {
+            "Count": 1,
+            "Version": "20.4.4.0"
+        }]
+    }, {
+        "@odata.type": "#UiPath.Server.Configuration.OData.ExtendedMachineDto",
+        "LicenseKey": "f2c1d824-79d7-482b-8449-db5644845883",
+        "Name": "MZRS-TSSP03",
+        "Description": "Mazars TSSP3",
+        "Type": "Standard",
+        "Scope": "Default",
+        "NonProductionSlots": 0,
+        "UnattendedSlots": 1,
+        "HeadlessSlots": 0,
+        "TestAutomationSlots": 0,
+        "Key": "11aa68f5-2f63-42a5-bbf1-91952d8ffcc4",
+        "Id": 12,
+        "RobotVersions": [{
+            "Count": 1,
+            "Version": "20.4.1.0"
+        }, {
+            "Count": 1,
+            "Version": "20.4.4.0"
+        }]
+    }, {
+        "@odata.type": "#UiPath.Server.Configuration.OData.ExtendedMachineDto",
+        "LicenseKey": "fe223dd1-e61d-41fd-9b0c-60a766088d3b",
+        "Name": "NOT-MAZARS-900",
+        "Description": "Note Bruno",
+        "Type": "Standard",
+        "Scope": "Default",
+        "NonProductionSlots": 0,
+        "UnattendedSlots": 0,
+        "HeadlessSlots": 0,
+        "TestAutomationSlots": 0,
+        "Key": "bbaaf0dc-8ad9-440f-82ae-014f62145715",
+        "Id": 58,
+        "RobotVersions": []
+    }]
+}
