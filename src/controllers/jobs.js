@@ -21,7 +21,7 @@ async function atividades(){
   let dados = [];
 
   for (let i=0; i < processos.length; i++) {
-    dados.push({nome: processos[i].ProcessKey, key:processos[i].Key });
+    dados.push({nomeKey: processos[i].ProcessKey, key:processos[i].Key, nome: processos[i].Name });
     
   }
 
@@ -46,6 +46,7 @@ module.exports = {
 
   async startJob(req,res){
     let {key} = req.body;
+    console.log(key)
     try {
 
       

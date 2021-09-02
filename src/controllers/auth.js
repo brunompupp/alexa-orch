@@ -5,9 +5,9 @@ const api = require('../services/api');
 module.exports = {
   async index(req,res){
     let dados = {
-      "grant_type": "refresh_token",
-      "client_id": "8DEv1AMNXczW3y4U15LL3jYf62jK93n5",
-      "refresh_token": "SU1kxaGC6kSyETdlUsYRouW_xevptrEjcKK1oGFLRRweJ"
+      "grant_type": process.env.GRANT_TYPE,
+      "client_id": process.env.CLIENT_ID,
+      "refresh_token": process.env.REFRESH_TOKEN
     }
     try{
 
@@ -37,9 +37,9 @@ module.exports = {
 
   async autenticacao(){
     let dados = {
-      "grant_type": "refresh_token",
-      "client_id": "8DEv1AMNXczW3y4U15LL3jYf62jK93n5",
-      "refresh_token": "SU1kxaGC6kSyETdlUsYRouW_xevptrEjcKK1oGFLRRweJ"
+      "grant_type": process.env.GRANT_TYPE,
+      "client_id": process.env.CLIENT_ID,
+      "refresh_token": process.env.REFRESH_TOKEN
     }
     try{
 

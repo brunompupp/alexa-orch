@@ -1,14 +1,15 @@
+require('dotenv').config();
 const util = require('util');
 const {OrchestratorApi} = require('uipath-orchestrator-api-node');
 
 const api = new OrchestratorApi({
   userinfo: {
-    tenancyName: 'mazars',
-    usernameOrEmailAddress: 'bruno.pupp',
-    password: 'brunomp05'
+    tenancyName: process.env.TENANT_NAME,
+    usernameOrEmailAddress: process.env.USER,
+    password: process.env.SENHA
   },
   serverinfo:{
-    servername: 'https://servert2c.eastus.cloudapp.azure.com'
+    servername: process.env.URL_VM
   }
 });
 
@@ -16,10 +17,10 @@ const api = new OrchestratorApi({
 
 const Orchestrator = require('uipath-orchestrator');
 const orchestrator = new Orchestrator({
-  tenancyName : 'mazars',
-  usernameOrEmailAddress: 'bruno.pupp',
-  password: 'brunomp05',
-  hostname: 'https://servert2c.eastus.cloudapp.azure.com',
+  tenancyName : process.env.TENANT_NAME,
+  usernameOrEmailAddress: process.env.USER,
+  password: process.env.SENHA,
+  hostname: process.env.URL_VM,
   isSecure: true,
   port: 443,
   invalidCertificate: true,
